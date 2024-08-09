@@ -8,6 +8,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField][Range(0.1f,5)] private float _cameraSensivity = 1f;
     [SerializeField] private Camera _playerCamera;
     [SerializeField] private Transform _cameraHolder;
+
+    public Transform CameraHolder => _cameraHolder;
+    
     private void Update() {
 
         Vector3 direction = Vector3.zero;
