@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a50269003d93c284c8fa49c6fdbc52de, type: 3}
+  m_Name: BasicPistol
+  m_EditorClassIdentifier: 
+  _pistolGameObject: {fileID: 6209366149215451143, guid: ce9243ae222b24947b86fef1ebca53bc, type: 3}
+  _fireRate: 0.1
+  _maxRange: 15
+  _accuracy: 0.2
+  _bulletsPerShot: 0
+  _clipSize: 10
+  _reloadTime: 3

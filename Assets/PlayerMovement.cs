@@ -1,16 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float _speed = 5f;
-    [SerializeField][Range(0.1f,5)] private float _cameraSensivity = 1f;
+    [SerializeField] private float _cameraSensivity = 0.1f;
     [SerializeField] private Camera _playerCamera;
     [SerializeField] private Transform _cameraHolder;
 
     public Transform CameraHolder => _cameraHolder;
-    
+
+     float mouseX;
+     float mouseY;
+
     private void Update() {
 
         Vector3 direction = Vector3.zero;
@@ -36,7 +40,12 @@ public class PlayerMovement : MonoBehaviour
        
         transform.position += direction * _speed * Time.deltaTime;
 
-        _cameraHolder.rotation = Quaternion.Euler(-Input.mousePosition.y * _cameraSensivity, Input.mousePosition.x * _cameraSensivity,0);
+
+        mouseX += Input.GetAxisRaw("Mouse X") * _cameraSensivity;
+        mouseY += Input.GetAxisRaw("Mouse Y") * _cameraSensivity;
+
+        mouseY = Mathf.Clamp(mouseY, -90,90);
+        _cameraHolder.rotation = Quaternion.Euler(-mouseY, mouseX, 0);
 
         _playerCamera.transform.rotation = _cameraHolder.rotation;
         _playerCamera.transform.position = _cameraHolder.position;
