@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a50269003d93c284c8fa49c6fdbc52de, type: 3}
+  m_Name: BasicPistol
+  m_EditorClassIdentifier: 
+  _weaponMesh: {fileID: -5495902117074765545, guid: e539ce83284979449a7967443d3ea248, type: 3}
+  _weaponMaterials:
+  - {fileID: -3846018093981099296, guid: e539ce83284979449a7967443d3ea248, type: 3}
+  - {fileID: 4874126678125670354, guid: b9f06d201eddabe4d9328ad59c023921, type: 3}
+  - {fileID: -6478536213147159724, guid: b9f06d201eddabe4d9328ad59c023921, type: 3}
+  _weaponName: Pistol
+  _fireRate: 0.7
+  _maxRange: 15
+  _accuracy: 0.2
+  _bulletsPerShot: 0
+  _clipSize: 10
+  _reloadTime: 3

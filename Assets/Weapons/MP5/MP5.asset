@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a50269003d93c284c8fa49c6fdbc52de, type: 3}
+  m_Name: MP5
+  m_EditorClassIdentifier: 
+  _weaponMesh: {fileID: 6753941925723565563, guid: b9f06d201eddabe4d9328ad59c023921, type: 3}
+  _weaponMaterials:
+  - {fileID: -2813467912831258332, guid: b9f06d201eddabe4d9328ad59c023921, type: 3}
+  - {fileID: -6478536213147159724, guid: b9f06d201eddabe4d9328ad59c023921, type: 3}
+  - {fileID: 4874126678125670354, guid: e539ce83284979449a7967443d3ea248, type: 3}
+  _weaponName: MP5
+  _fireRate: 0.1
+  _maxRange: 10
+  _accuracy: 0.4
+  _bulletsPerShot: 0
+  _clipSize: 25
+  _reloadTime: 2
